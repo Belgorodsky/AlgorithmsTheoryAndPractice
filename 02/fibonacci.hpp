@@ -44,6 +44,7 @@ std::array<std::size_t, 1 + maxIndex> Fibonacci<maxIndex> ::table = {};
 template<>
 class Fibonacci<0> final
 {
+public:
 	static int get(int n)
 	{
 		assert(!n);
@@ -54,6 +55,7 @@ class Fibonacci<0> final
 template<>
 class Fibonacci<1> final
 {
+public:
 	static int get(int n)
 	{
 		assert(n <= 1);
